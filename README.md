@@ -3,7 +3,6 @@ EJERCICIO DE RMARKDOWN
 Pues aquí empezamos haciendo cosas extrañas.
 Esto es el README, deberíamos poder abrir otro archivo con R.
 
-
 ## Lo que debe tener es: 
 
 **Un README en el que se explique lo que estamos haciendo.**
