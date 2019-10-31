@@ -10,7 +10,7 @@ output: html_document
 > El conocimiento es poder, 
 >guardalo bien; 
 
-"*Azariah Vidya*"
+"*Azariah [Vidya](https://jornadaonline.com/fotos/archivo/el-saludo.jpg)*"
 
 
 Gracias a los numerosos avances en la propagación del conocimiento es posible conocer los incríbles usos de nuevas herramientas en la presentación de documentos, como es 
