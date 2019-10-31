@@ -45,6 +45,7 @@ renderPlot({
 
   lines(dens, col="red", lwd=3, lty=2) 
   curve(dnorm(x, mean=mean(faithful$eruptions), sd=sd(faithful$eruptions)), add=TRUE, col="black", lwd=3)
+# Simulacion de los valores de una normal con la misma media y deviación típica que faithful$eruptions.
 })
 
 ```
