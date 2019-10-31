@@ -5,10 +5,9 @@ EJERCICIO DE RMARKDOWN
 
 **Un README en el que se explique lo que estamos haciendo.**
 
-**Un RMarkdown en el que se vea lo suficientemente complejo en el que se vea que sabemos usarla**
-Contiene bloques de texto, listas, cabeceras y títulos entre otras opciones.
+**Un RMarkdown en el que se vea lo suficientemente complejo en el que se vea que sabemos usarla.**
 
-**Un shiny o uno de flexdashboard cambiar cosas**
+**Un shiny y un de flexdashboard cambiar cosas.**
 
 Se creó la carpeta "AppGoogleChart"" para la presentacion de "Google Charts demo" tomada de la web https://shiny.rstudio.com/gallery/google-charts.html pero se utilizó el código corregido desde https://github.com/jcheng5/googleCharts/blob/master/inst/examples/bubble/server.R que es del autor del grafico.
 
@@ -22,12 +21,14 @@ install.packages("dplyr")
 Descargar el archivo healthexp.Rds desde el repositorio en la misma carpeta del aplicativo, en este caso 
 AppGoogleChart
 
-### Para ejecutar la aplicacion
+### Para ejecutar la aplicacion:
 
 En un nuevo fichero scrip ejecutar el comando: runApp("AppGoogleChart")
 
 ```
 runApp("AppGoogleChart")
 ```
-##Archivo Shiny:
-Se han cambiado los colores de las bandas de histograma y añadido una curva 
+## Archivo Shiny:
+Se han cambiado los colores de las bandas de histograma y añadido una curva simulado de los valores de una normal con 
+la misma media y deviación típica.
+
