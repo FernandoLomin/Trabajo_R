@@ -1,1 +1,144 @@
+---
+title: "Valores Nuevos"
+author: "Pavel/Fer"
+date: "31 de octubre de 2019"
+output: html_document
+---
 
+# ¿Qué esperar de este documento?
+
+> El conocimiento es poder, 
+>guardalo bien; 
+>"*Azariah Vidya*"
+
+[Azariah]: Bibliotecario Jefe, también llamado "Gran Padre"
+
+Gracias a los numerosos avances en la propagación del conocimiento es posible conocer los incríbles usos de nuevas herramientas en la presentación de documentos, como es 
+
+**RMarkdown**
+
+---
+~~~
+Algunas formas de lectura de documentos son:
+ read.table("d1.txt", header = TRUE)
+ read.table("d2.txt", header = TRUE, sep = "\t")
+ read.table("d3.txt", sep = "\t")
+ read.table("d4.txt", header = TRUE, comment.char = "@")
+ 
+Además contamos con operaciónes de vectores y data frames (por pasos):
+#Nuestro vector
+ hr <- c(87, 78, 86, 62, 69, 69, 68, 67, 75, 76)
+#1.
+age <- rep(c(11, 63, 40, 47), c(3, 2, 4, 1))
+names(hr) <- age
+
+#2.
+hr[c(names(hr) < 45)]
+
+#3.
+hr2 <- c(hr[c(names(hr)) == 63], hr[c(names(hr)) == 47])
+names(hr2) <- c("Juan", "Ana", "Carmen")
+
+#4.
+hr2[c("Juan", "Ana")]
+
+#5.
+matriz <- cbind(hr2, c(63,63,47))
+names(matriz) <- c("hr", "age")
+
+#6.
+data_frame <- cbind(data.frame(hr2), c(63, 63, 47))
+names(data_frame) <- c("hr", "age")
+
+#7
+data_frame2 <- cbind(names(hr2), data.frame(hr2, row.names = NULL), 
+               c(63, 63, 47))
+names(data_frame2) <- c("name","hr", "age")
+#No podríamos hacer esto con una matriz, ya que todos los elementos dentro de ella deben ser del mismo tipo
+
+#8.
+matriz["Juan", 1]
+
+#9.
+matriz["Juan", ]
+
+#10.
+data_frame["Ana", "hr"]
+
+#11.
+data_frame2 [2,2]
+
+#12.
+data_frame2 [2, ]
+
+#13.
+data_frame3 <- data_frame2[data_frame2$age > 60, ]
+
+#14.
+data_frame4 <- data_frame[data_frame$age > 60, ]
+
+#15.
+matriz2 <- matrix(c(hr, age), ncol = 2)
+colnames(matriz2) <- c("hr", "age")
+matriz2 <- matriz2[age > 15, ]
+
+#16.
+sex <- c("M", "F")[c(1, 2, 1, 1, 2, 2, 1, 1, 2, 1)]
+matriz3 <- cbind(matriz2, sex[-c(1, 2, 3)])
+
+#17.
+data_frame5 <- cbind(data_frame, sex[c(1, 2, 10)])
+names(data_frame5) <- c("hr", "age", "sex")
+~~~
+
+
+[^1]: La otra opción es emplear paquetes ya disponibles para RMarkdown
+
+## Si hicieramos un print encontrariamos esto
+```{r setup, include = TRUE, echo=FALSE}
+hr <- c(87, 78, 86, 62, 69, 69, 68, 67, 75, 76)
+age <- rep(c(11, 63, 40, 47), c(3, 2, 4, 1))
+names(hr) <- age
+hr[c(names(hr) < 45)]
+hr2 <- c(hr[c(names(hr)) == 63], hr[c(names(hr)) == 47])
+names(hr2) <- c("Juan", "Ana", "Carmen")
+hr2[c("Juan", "Ana")]
+matriz <- cbind(hr2, c(63,63,47))
+names(matriz) <- c("hr", "age")
+data_frame <- cbind(data.frame(hr2), c(63, 63, 47))
+names(data_frame) <- c("hr", "age")
+data_frame2 <- cbind(names(hr2), data.frame(hr2, row.names = NULL), 
+               c(63, 63, 47))
+names(data_frame2) <- c("name","hr", "age")
+matriz["Juan", 1]
+matriz["Juan", ]
+data_frame["Ana", "hr"]
+data_frame2 [2,2]
+data_frame2 [2, ]
+data_frame3 <- data_frame2[data_frame2$age > 60, ]
+data_frame4 <- data_frame[data_frame$age > 60, ]
+matriz2 <- matrix(c(hr, age), ncol = 2)
+colnames(matriz2) <- c("hr", "age")
+matriz2 <- matriz2[age > 15, ]
+sex <- c("M", "F")[c(1, 2, 1, 1, 2, 2, 1, 1, 2, 1)]
+matriz3 <- cbind(matriz2, sex[-c(1, 2, 3)])
+data_frame5 <- cbind(data_frame, sex[c(1, 2, 10)])
+names(data_frame5) <- c("hr", "age", "sex")
+```
+
+# Hacer tablas en RMarkdown
+
+Sinceramente, puedes emplear el sistema por defecto:
+
+Cabecera 1 | Hola Mundo
+-- | --
+Primer campo | Esto no es un campo
+Obscuro | Texto de Ejemplo
+
+***Cae de forma cool***
+
+* Hello there
+
+___Giro genial___
+
+* General Kenobi
