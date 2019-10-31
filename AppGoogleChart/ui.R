@@ -1,7 +1,11 @@
-# More info:
+# Mas información:
+
 #   https://github.com/jcheng5/googleCharts
-# Install:
+
+# Instalar previamente el paquete googleCharts:
+
 #   devtools::install_github("jcheng5/googleCharts")
+
 library(googleCharts)
 
 # Use global max/min for axes so the view window stays
@@ -28,7 +32,7 @@ shinyUI(fluidPage(
              "body {font-family: 'Source Sans Pro'}"
   ),
   
-  h2("Google Charts demo"),
+  h2("Google Charts Trabajo en RStudio"),
   
   googleBubbleChart("chart",
                     width="100%", height = "475px",
@@ -37,15 +41,15 @@ shinyUI(fluidPage(
                     # https://developers.google.com/chart/interactive/docs/gallery/bubblechart
                     # for option documentation.
                     options = list(
-                      fontName = "Source Sans Pro",
+                      fontName = "Fuente Sans Pro",
                       fontSize = 13,
                       # Set axis labels and ranges
                       hAxis = list(
-                        title = "Health expenditure, per capita ($USD)",
+                        title = "Gasto en salud per cápita ($USD)",
                         viewWindow = xlim
                       ),
                       vAxis = list(
-                        title = "Life expectancy (years)",
+                        title = "Esperanza de vida (años)",
                         viewWindow = ylim
                       ),
                       # The default padding is a little too spaced out

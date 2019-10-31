@@ -14,10 +14,15 @@ Se creó la carpeta "AppGoogleChart"" para la presentacion de "Google Charts dem
 
 ### Requisitos previos para la visualización
 
-Instalar:
+### Instalar:
 
 devtools::install_github("jcheng5/googleCharts")
 install.packages("dplyr")
 
 Descargar el archivo healthexp.Rds desde el repositorio en la misma carpeta del aplicativo, en este caso 
 AppGoogleChart
+
+### Para ejecutar la aplicacion
+
+En un nuevo fichero scrip ejecutar el comando: runApp("AppGoogleChart")
+

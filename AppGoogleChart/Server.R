@@ -1,3 +1,5 @@
+# Instalar previamente el paquete "dplyr" o habilitarlo
+
 library(dplyr)
 
 shinyServer(function(input, output, session) {
@@ -30,7 +32,7 @@ shinyServer(function(input, output, session) {
       data = googleDataTable(yearData()),
       options = list(
         title = sprintf(
-          "Health expenditure vs. life expectancy, %s",
+          "Gasto en Salud vs. Esperanza de Vida, %s",
           input$year),
         series = series
       )
