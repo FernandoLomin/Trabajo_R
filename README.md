@@ -1,13 +1,12 @@
 # Trabajo_R
 EJERCICIO DE RMARKDOWN
-Pues aquí empezamos haciendo cosas extrañas.
-Esto es el README, deberíamos poder abrir otro archivo con R.
 
 ## Lo que debe tener es: 
 
 **Un README en el que se explique lo que estamos haciendo.**
 
 **Un RMarkdown en el que se vea lo suficientemente complejo en el que se vea que sabemos usarla**
+Contiene bloques de texto, listas, cabeceras y títulos entre otras opciones.
 
 **Un shiny o uno de flexdashboard cambiar cosas**
 
@@ -30,3 +29,5 @@ En un nuevo fichero scrip ejecutar el comando: runApp("AppGoogleChart")
 ```
 runApp("AppGoogleChart")
 ```
+##Archivo Shiny:
+Se han cambiado los colores de las bandas de histograma y añadido una curva 
