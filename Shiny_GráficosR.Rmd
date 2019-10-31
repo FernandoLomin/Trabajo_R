@@ -1,5 +1,5 @@
 ---
-title: "Nuestros Humildes Cambios"
+title: "Old Faithful Eruptions"
 output: 
   flexdashboard::flex_dashboard:
     orientation: rows
@@ -21,9 +21,9 @@ Waiting time between eruptions and the duration of the eruption for the
 Old Faithful geyser in Yellowstone National Park, Wyoming, USA.
 
 ```{r}
-selectInput("n_breaks", label = "Number of bins:",
+selectInput("n_breaks", label = "Numbero de contenedores:",
             choices = c(10, 20, 35, 50), selected = 20)
-sliderInput("bw_adjust", label = "Bandwidth adjustment:",
+sliderInput("bw_adjust", label = "Ajuste del ancho de bandas:",
             min = 0.2, max = 2, value = 1, step = 0.2)
 ```
 
@@ -35,9 +35,16 @@ Column
 ```{r}
 renderPlot({
   hist(faithful$eruptions, probability = TRUE, breaks = as.numeric(input$n_breaks),
-       xlab = "Duration (minutes)", main = "Geyser Eruption Duration")
-  
+       xlab = "Duracion (minutos)", 
+       col=rainbow(faithful$eruptions), 
+       border = "white",
+       main = "Duracion de la erupcion del geiser")
+
   dens <- density(faithful$eruptions, adjust = input$bw_adjust)
-  lines(dens, col = "blue")
+  lines(dens, col = "yellow")
+
+  lines(dens, col="red", lwd=3, lty=2) 
+  curve(dnorm(x, mean=mean(faithful$eruptions), sd=sd(faithful$eruptions)), add=TRUE, col="black", lwd=3)
 })
+
 ```
