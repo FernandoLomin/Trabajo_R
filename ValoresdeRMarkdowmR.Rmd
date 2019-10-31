@@ -16,6 +16,11 @@ output: html_document
 
 Gracias a los numerosos avances en la propagación del conocimiento es posible conocer los incríbles usos de nuevas herramientas en la presentación de documentos, como es 
 
+1. Lista 1
+2. Lista 2
+3. Lista 3
+    + Puede que sea una sublista 
+    + Sospechosos habituales
 
 ******
 **RMarkdown**
