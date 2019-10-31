@@ -9,12 +9,15 @@ output: html_document
 
 > El conocimiento es poder, 
 >guardalo bien; 
->"*Azariah Vidya*"
+
+"*Azariah Vidya*"
 
 [Azariah]: Bibliotecario Jefe, también llamado "Gran Padre"
 
 Gracias a los numerosos avances en la propagación del conocimiento es posible conocer los incríbles usos de nuevas herramientas en la presentación de documentos, como es 
 
+
+******
 **RMarkdown**
 
 ---
@@ -92,7 +95,7 @@ names(data_frame5) <- c("hr", "age", "sex")
 ~~~
 
 
-[^1]: La otra opción es emplear paquetes ya disponibles para RMarkdown
+******
 
 ## Si hicieramos un print encontrariamos esto
 ```{r setup, include = TRUE, echo=FALSE}
@@ -128,6 +131,8 @@ names(data_frame5) <- c("hr", "age", "sex")
 
 # Hacer tablas en RMarkdown
 
+Cabecera de página de ejemplo [^1]
+
 Sinceramente, puedes emplear el sistema por defecto:
 
 Cabecera 1 | Hola Mundo
@@ -142,3 +147,5 @@ Obscuro | Texto de Ejemplo
 ___Giro genial___
 
 * General Kenobi
+
+[^1]: **La otra opción es emplear paquetes ya disponibles para RMarkdown**
