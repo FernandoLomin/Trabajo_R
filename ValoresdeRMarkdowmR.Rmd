@@ -12,7 +12,7 @@ output: html_document
 
 "*Azariah Vidya*"
 
-[Azariah]: Bibliotecario Jefe, también llamado "Gran Padre"
+[^]Azariah: Bibliotecario Jefe, también llamado "Gran Padre"
 
 Gracias a los numerosos avances en la propagación del conocimiento es posible conocer los incríbles usos de nuevas herramientas en la presentación de documentos, como es 
 
