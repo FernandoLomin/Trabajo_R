@@ -1,17 +1,25 @@
 # Trabajo_R
-EJERCICIO DE RMARKDOWN
+
+_Autores:_
+
+>Pavel Ramirez
+
+>Fernando Lominchar
 
 ## Lo que debe tener es: 
 
-**Un README en el que se explique lo que estamos haciendo.**
+1) **Un README en el que se explique lo que estamos haciendo.**
 
-**Un RMarkdown en el que se vea lo suficientemente complejo en el que se vea que sabemos usarla.**
+2) **Un RMarkdown en el que se vea lo suficientemente complejo en el que se vea que sabemos usarla.**
 
-**Un shiny y un de flexdashboard cambiar cosas.**
+3) **Un shiny y un de flexdashboard y cambiar cosas.**
+
+
+## Pasos para abrir AppGoogleChart
 
 Se creó la carpeta "AppGoogleChart"" para la presentacion de "Google Charts demo" tomada de la web https://shiny.rstudio.com/gallery/google-charts.html pero se utilizó el código corregido desde https://github.com/jcheng5/googleCharts/blob/master/inst/examples/bubble/server.R que es del autor del grafico.
 
-### Requisitos previos para la visualización
+## Requisitos previos para la visualización
 
 ### Instalar:
 ```
