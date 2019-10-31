@@ -153,3 +153,9 @@ ___Giro genial___
 * General Kenobi
 
 [^1]: **La otra opción es emplear paquetes ya disponibles para RMarkdown**
+
+
+### Images
+![GitHub Logo](images/logo.jpg)
+
+![GitHub Paquetes](images/r-packages.png)
